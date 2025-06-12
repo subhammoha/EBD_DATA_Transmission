@@ -1,4 +1,4 @@
-# 📦 EBD Project Data Transmission – Postman Guide
+# 📦 EBD Project Data Transmission
 
 This repository enables API-based project data transmission for the **Equitable Building Decarbonization (EBD) Direct Install Program**, using JSON and CSV templates through Postman.
 
@@ -13,7 +13,8 @@ This repository enables API-based project data transmission for the **Equitable 
 ```text
 postman/
 ├── collections/
-└── environments/
+├── environments/
+
 project-data-transmission-templates/
 ├── SingleFamily/
 │   ├── Initial Enrollment/
@@ -59,6 +60,12 @@ MultiFamily
 - [Post-installation JSON](project-data-transmission-templates/MultiFamily/Post-installation/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Post-installation/csv/)
 - [Final Enrollment JSON](project-data-transmission-templates/MultiFamily/Final%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Final%20Enrollment/csv/)
 
+
+Each stage directory contains a sample `data.json` payload and a `csv` Template. 
+
+The [`postman`](postman/) folder stores the Postman collection and environment files. You can download them from [`postman/collections`](postman/collections/) and [`postman/environments`](postman/environments/).
+
+
 ## 🛠 Setup Instructions
 
 ### 1. Install Postman
@@ -67,11 +74,11 @@ Download from [https://www.postman.com/downloads](https://www.postman.com/downlo
 ### 2. Import Postman Collection
 - Download the collection from [`postman/collections`](postman/collections/)
 - Open Postman → Click **Import**
-- Upload `EBD Copy.postman_collection.json`
+- Upload `EBD.postman_collection.json`
+
 
 ### 3. Import Environment
 - Download the environment file from [`postman/environments`](postman/environments/)
-- Import `EBD Portal.postman_environment.json`
 - Set **EBD Portal** as the active environment
 
 ## 🔐 Authentication
@@ -119,6 +126,7 @@ Updates can also be submitted via **JSON or CSV**.
 
 📨 A confirmation email will be sent with processing results.
 
+
 ## 📌 Best Practices
 
 - ✅ Use the official templates provided in this repository
@@ -128,5 +136,7 @@ Updates can also be submitted via **JSON or CSV**.
 
 ## 📬 Contact
 
-For any questions or support:
+
+For any questions or support:  
+
 [ecams.salesforcesupport@energy.ca.gov](mailto:ecams.salesforcesupport@energy.ca.gov)
