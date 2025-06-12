@@ -1,0 +1,28 @@
+[
+  {
+    "ProjectName": "",
+    "Stage": "",
+    "PostInstallationStatus": "",
+    "ProjectType": "",
+    "SupplementalMeasuresFundedByPartnerPrograms": "",
+    "SolarPvCostPartnerProgram": "",
+    "PartnerProgramNameSolarPV": "",
+    "BatteryStorageCostPartnerProgram": "",
+    "PartnerProgramNameBatteryStorageCost": "",
+    "EvChargerCostPartnerProgram": "",
+    "PartnerProgramNameEvCharger": "",
+    "OtherMeasurePartnerProgram": "",
+    "OtherCostPartnerProgram": "",
+    "PartnerProgramNameOther": "",
+    "HotlineCallTally": "",
+    "IssuesReported": "",
+    "IssueOther": "",
+    "DateOfLatestCall": "",
+    "DateSurveyProvidedToParticipant": "",
+    "DateSurveyReceivedFromParticipant": "",
+    "ActualNormalizedGasSavingsThermsYr": "",
+    "ActualNormalizedElectricitySavingsKwhYr": "",
+    "ActualNormalizedTotalEnergySavingsKwheYr": "",
+    "MeasuredUtilityBillImpactYr": ""
+  }
+]
