@@ -1,7 +1,7 @@
 [
 {
   "ProjectName": "",
-  "AgreementNumber": "",
+  "Agreement": "",
   "Stage": "",
   "InitialEnrollmentStatus": "",
   "ProjectType": "",
@@ -38,12 +38,12 @@
   "LastNamePrimaryOwner": "",
   "PhoneOwner": "",
   "EmailPrimaryOwner": "",
-  "CompanyOwner": "",
+  "CompanyPrimaryOwner": "",
   "FirstNamePrimaryContact": "",
   "LastNamePrimaryContact": "",
   "PhonePrimaryContact": "",
   "EmailPrimaryContact": "",
-  "IncomeVerificationMethodology": "",
+  "IncomeVerificationMethodologyMF": "",
   "NumberOfUnitsVerifiedAsLowIncome": "",
   "UnitIncomeVerificationMethodologies": "",
   "IncomeVerificationMethodologyOther": "",
