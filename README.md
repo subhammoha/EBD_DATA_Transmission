@@ -8,10 +8,13 @@ This repository enables API-based project data transmission for the **Equitable 
 - Postman collection and environment JSON files for authentication and requests
 - Instructions for authentication, setup, and usage
 
-## Directory Structure
+## 📁 Directory Structure
+
+```text
 postman/
 ├── collections/
-└── environments/
+├── environments/
+
 project-data-transmission-templates/
 ├── SingleFamily/
 │   ├── Initial Enrollment/
@@ -26,21 +29,23 @@ project-data-transmission-templates/
 │   └── Final Enrollment/
 │       ├── data.json
 │       └── csv/
-└── MultiFamily/
-    ├── Initial Enrollment/
-    │   ├── data.json
-    │   └── csv/
-    ├── Installation/
-    │   ├── data.json
-    │   └── csv/
-    ├── Post-installation/
-    │   ├── data.json
-    │   └── csv/
-    └── Final Enrollment/
-        ├── data.json
-        └── csv/
+├── MultiFamily/
+│   ├── Initial Enrollment/
+│   │   ├── data.json
+│   │   └── csv/
+│   ├── Installation/
+│   │   ├── data.json
+│   │   └── csv/
+│   ├── Post-installation/
+│   │   ├── data.json
+│   │   └── csv/
+│   └── Final Enrollment/
+│       ├── data.json
+│       └── csv/
 
-Each stage directory contains a sample `data.json` payload and a `csv` folder. Replace the placeholder README within each `csv` directory with your own templates when you are ready to perform bulk uploads.
+
+Each stage directory contains a sample `data.json` payload and a `csv` Template. 
+
 The [`postman`](postman/) folder stores the Postman collection and environment files. You can download them from [`postman/collections`](postman/collections/) and [`postman/environments`](postman/environments/).
 
 ## 🛠 Setup Instructions
@@ -56,24 +61,6 @@ Download from [https://www.postman.com/downloads](https://www.postman.com/downlo
 ### 3. Import Environment
 - Download the environment file from [`postman/environments`](postman/environments/)
 - Import `EBD Portal.postman_environment.json`
-
-Each stage directory contains a sample `data.json` payload and a sample `csv` Template.
-
-
-## 🛠 Postman Setup Instructions
-
-### 1. Install Postman
-Download from (https://www.postman.com/downloads)
-
-### 2.Import Postman Collection
-- Download - 
-- Open Postman → Click **Import**
-- Upload: `EBD.postman_collection.json`
-
-### 3. Import Environment
-- Download- 
-- Import the file: `EBD Portal.postman_environment.json`
-- Set **EBD Portal** as the active environment
 
 ## 🔐 Authentication
 
