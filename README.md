@@ -40,4 +40,4 @@ Each stage folder contains:
 - `csv/` – a README file inside each `csv` folder that you can replace with your own CSV templates.
 
 Replace the contents of the `csv` directories with your own files when you are ready to perform bulk uploads.
-\nSee [INSTRUCTIONS.md](INSTRUCTIONS.md) for API usage details.
+See [INSTRUCTIONS.md](INSTRUCTIONS.md) for API usage details.
