@@ -1,6 +1,6 @@
-# Project Data Transmission Templates
+# EBD Project Data Transmission Templates
 
-This repository organizes example payloads for transmitting project data to Salesforce via the EBD Project API.  Each workflow stage for Single Family and Multi Family projects contains a JSON template and a placeholder directory for CSV uploads.
+This repository organizes example payloads for transmitting project data to Salesforce via the API.  Each workflow stage for Single Family and Multi Family projects contains a JSON template and a placeholder directory for CSV uploads.
 
 The directory structure is:
 
