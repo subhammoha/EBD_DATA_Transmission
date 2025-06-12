@@ -14,7 +14,6 @@ This repository enables API-based project data transmission for the **Equitable 
 postman/
 ├── collections/
 ├── environments/
-
 project-data-transmission-templates/
 ├── SingleFamily/
 │   ├── Initial Enrollment/
@@ -44,7 +43,7 @@ project-data-transmission-templates/
         └── csv/
 ```
 
-Each stage directory contains a sample `data.json` payload and a `csv` folder. Replace the placeholder README within each `csv` directory with your own templates when you are ready to perform bulk uploads. The [`postman`](postman/) folder stores the Postman collection and environment files, available from [`postman/collections`](postman/collections/) and [`postman/environments`](postman/environments/).
+Each stage directory contains a sample `data.json` payload and a `csv` folder. Replace the placeholder README within each `csv` directory with your own templates when you are ready to perform bulk uploads.
 
 ### Template Locations
 
@@ -60,10 +59,6 @@ MultiFamily
 - [Post-installation JSON](project-data-transmission-templates/MultiFamily/Post-installation/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Post-installation/csv/)
 - [Final Enrollment JSON](project-data-transmission-templates/MultiFamily/Final%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Final%20Enrollment/csv/)
 
-
-Each stage directory contains a sample `data.json` payload and a `csv` Template. 
-
-The [`postman`](postman/) folder stores the Postman collection and environment files. You can download them from [`postman/collections`](postman/collections/) and [`postman/environments`](postman/environments/).
 
 
 ## 🛠 Setup Instructions
