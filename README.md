@@ -5,7 +5,7 @@ This repository enables API-based project data transmission for the **Equitable 
 ## 📁 Contents
 
 - JSON & CSV templates for Single Family and Multifamily projects
-- A Postman Collection for sending Create and Update API calls
+- Postman Collection and Environmental variable for sending Create and Update API calls
 - Instructions for authentication, setup, and usage
 
 ## Directory Structure
@@ -38,19 +38,21 @@ project-data-transmission-templates/
         ├── data.json
         └── csv/
 
-Each stage directory contains a sample `data.json` payload and a `csv` Template.
+Each stage directory contains a sample `data.json` payload and a sample `csv` Template.
 
 
 ## 🛠 Postman Setup Instructions
 
 ### 1. Install Postman
-Download from [https://www.postman.com/downloads](https://www.postman.com/downloads)
+Download from (https://www.postman.com/downloads)
 
-### 2. Import Postman Collection
+### 2.Import Postman Collection
+- Download - 
 - Open Postman → Click **Import**
-- Upload: `EBD Copy.postman_collection.json`
+- Upload: `EBD.postman_collection.json`
 
 ### 3. Import Environment
+- Download- 
 - Import the file: `EBD Portal.postman_environment.json`
 - Set **EBD Portal** as the active environment
 
