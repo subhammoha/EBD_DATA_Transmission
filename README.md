@@ -48,7 +48,7 @@ Each stage directory contains a sample `.json` payload and a `csv` Template.
 
 ## 🛠 Setup Instructions
 
-### 1. Install Postman Or Postman Web
+### 1. Install Postman Or Use Postman Web
 Download from [https://www.postman.com/downloads](https://www.postman.com/downloads)
 
 Web-[https://www.postman.com](https://www.postman.com)
