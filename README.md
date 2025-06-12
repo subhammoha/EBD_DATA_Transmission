@@ -17,48 +17,33 @@ postman/
 project-data-transmission-templates/
 ├── SingleFamily/
 │   ├── Initial Enrollment/
-│   │   ├── data.json
+│   │   ├── json
 │   │   └── csv/
 │   ├── Installation/
-│   │   ├── data.json
+│   │   ├── json
 │   │   └── csv/
 │   ├── Post-installation/
-│   │   ├── data.json
+│   │   ├── json
 │   │   └── csv/
 │   └── Final Enrollment/
-│       ├── data.json
+│       ├── json
 │       └── csv/
 └── MultiFamily/
     ├── Initial Enrollment/
-    │   ├── data.json
+    │   ├── json
     │   └── csv/
     ├── Installation/
-    │   ├── data.json
+    │   ├── json
     │   └── csv/
     ├── Post-installation/
-    │   ├── data.json
+    │   ├── json
     │   └── csv/
     └── Final Enrollment/
-        ├── data.json
+        ├── json
         └── csv/
 ```
 
-Each stage directory contains a sample `data.json` payload and a `csv` folder. Replace the placeholder README within each `csv` directory with your own templates when you are ready to perform bulk uploads.
-
-### Template Locations
-
-Single Family
-- [Initial Enrollment JSON](project-data-transmission-templates/SingleFamily/Initial%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/SingleFamily/Initial%20Enrollment/csv/)
-- [Installation JSON](project-data-transmission-templates/SingleFamily/Installation/data.json) – [CSV folder](project-data-transmission-templates/SingleFamily/Installation/csv/)
-- [Post-installation JSON](project-data-transmission-templates/SingleFamily/Post-installation/data.json) – [CSV folder](project-data-transmission-templates/SingleFamily/Post-installation/csv/)
-- [Final Enrollment JSON](project-data-transmission-templates/SingleFamily/Final%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/SingleFamily/Final%20Enrollment/csv/)
-
-MultiFamily
-- [Initial Enrollment JSON](project-data-transmission-templates/MultiFamily/Initial%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Initial%20Enrollment/csv/)
-- [Installation JSON](project-data-transmission-templates/MultiFamily/Installation/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Installation/csv/)
-- [Post-installation JSON](project-data-transmission-templates/MultiFamily/Post-installation/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Post-installation/csv/)
-- [Final Enrollment JSON](project-data-transmission-templates/MultiFamily/Final%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Final%20Enrollment/csv/)
-
+Each stage directory contains a sample `.json` payload and a `csv` Template. 
 
 
 ## 🛠 Setup Instructions
