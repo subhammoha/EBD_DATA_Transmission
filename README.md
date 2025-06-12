@@ -10,7 +10,6 @@ This repository enables API-based project data transmission for the **Equitable 
 
 ## Directory Structure
 
-```text
 project-data-transmission-templates/
 ├── SingleFamily/
 │   ├── Initial Enrollment/
@@ -38,11 +37,11 @@ project-data-transmission-templates/
     └── Final Enrollment/
         ├── data.json
         └── csv/
-```
 
-Each stage directory contains a sample `data.json` payload and a `csv` folder. Replace the placeholder README within each `csv` directory with your own templates when you are ready to perform bulk uploads.
+Each stage directory contains a sample `data.json` payload and a `csv` Template.
 
-## 🛠 Setup Instructions
+
+## 🛠 Postman Setup Instructions
 
 ### 1. Install Postman
 Download from [https://www.postman.com/downloads](https://www.postman.com/downloads)
