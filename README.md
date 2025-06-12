@@ -1,4 +1,4 @@
-# 📦 EBD Project Data Transmission – Postman Guide
+# 📦 EBD Project Data Transmission
 
 This repository enables API-based project data transmission for the **Equitable Building Decarbonization (EBD) Direct Install Program**, using JSON and CSV templates through Postman.
 
@@ -8,7 +8,7 @@ This repository enables API-based project data transmission for the **Equitable 
 - Postman collection and environment JSON files for authentication and requests
 - Instructions for authentication, setup, and usage
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```text
 postman/
@@ -29,24 +29,42 @@ project-data-transmission-templates/
 │   └── Final Enrollment/
 │       ├── data.json
 │       └── csv/
-├── MultiFamily/
-│   ├── Initial Enrollment/
-│   │   ├── data.json
-│   │   └── csv/
-│   ├── Installation/
-│   │   ├── data.json
-│   │   └── csv/
-│   ├── Post-installation/
-│   │   ├── data.json
-│   │   └── csv/
-│   └── Final Enrollment/
-│       ├── data.json
-│       └── csv/
+└── MultiFamily/
+    ├── Initial Enrollment/
+    │   ├── data.json
+    │   └── csv/
+    ├── Installation/
+    │   ├── data.json
+    │   └── csv/
+    ├── Post-installation/
+    │   ├── data.json
+    │   └── csv/
+    └── Final Enrollment/
+        ├── data.json
+        └── csv/
+```
+
+Each stage directory contains a sample `data.json` payload and a `csv` folder. Replace the placeholder README within each `csv` directory with your own templates when you are ready to perform bulk uploads. The [`postman`](postman/) folder stores the Postman collection and environment files, available from [`postman/collections`](postman/collections/) and [`postman/environments`](postman/environments/).
+
+### Template Locations
+
+Single Family
+- [Initial Enrollment JSON](project-data-transmission-templates/SingleFamily/Initial%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/SingleFamily/Initial%20Enrollment/csv/)
+- [Installation JSON](project-data-transmission-templates/SingleFamily/Installation/data.json) – [CSV folder](project-data-transmission-templates/SingleFamily/Installation/csv/)
+- [Post-installation JSON](project-data-transmission-templates/SingleFamily/Post-installation/data.json) – [CSV folder](project-data-transmission-templates/SingleFamily/Post-installation/csv/)
+- [Final Enrollment JSON](project-data-transmission-templates/SingleFamily/Final%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/SingleFamily/Final%20Enrollment/csv/)
+
+MultiFamily
+- [Initial Enrollment JSON](project-data-transmission-templates/MultiFamily/Initial%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Initial%20Enrollment/csv/)
+- [Installation JSON](project-data-transmission-templates/MultiFamily/Installation/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Installation/csv/)
+- [Post-installation JSON](project-data-transmission-templates/MultiFamily/Post-installation/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Post-installation/csv/)
+- [Final Enrollment JSON](project-data-transmission-templates/MultiFamily/Final%20Enrollment/data.json) – [CSV folder](project-data-transmission-templates/MultiFamily/Final%20Enrollment/csv/)
 
 
 Each stage directory contains a sample `data.json` payload and a `csv` Template. 
 
 The [`postman`](postman/) folder stores the Postman collection and environment files. You can download them from [`postman/collections`](postman/collections/) and [`postman/environments`](postman/environments/).
+
 
 ## 🛠 Setup Instructions
 
@@ -58,15 +76,16 @@ Download from [https://www.postman.com/downloads](https://www.postman.com/downlo
 - Open Postman → Click **Import**
 - Upload `EBD.postman_collection.json`
 
+
 ### 3. Import Environment
 - Download the environment file from [`postman/environments`](postman/environments/)
-- Import `EBD Portal.postman_environment.json`
+- Set **EBD Portal** as the active environment
 
 ## 🔐 Authentication
 
-1. Open the Postman collection → **Authorization** tab  
+1. Open the Postman collection → **Authorization** tab
 2. Click **Get New Access Token**
-3. Login with your Salesforce Experience Cloud credentials  
+3. Login with your Salesforce Experience Cloud credentials
 4. Click **Use Token**
 
 The token is stored and used automatically for all requests.
@@ -117,5 +136,7 @@ Updates can also be submitted via **JSON or CSV**.
 
 ## 📬 Contact
 
+
 For any questions or support:  
+
 [ecams.salesforcesupport@energy.ca.gov](mailto:ecams.salesforcesupport@energy.ca.gov)
