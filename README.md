@@ -18,29 +18,29 @@ project-data-transmission-templates/
 ├── SingleFamily/
 │   ├── Initial Enrollment/
 │   │   ├── json
-│   │   └── csv/
+│   │   └── csv
+│   ├── Final Enrollment/
+│   │   ├── json
+│   │   └── csv
 │   ├── Installation/
 │   │   ├── json
-│   │   └── csv/
-│   ├── Post-installation/
-│   │   ├── json
-│   │   └── csv/
-│   └── Final Enrollment/
+│   │   └── csv
+│   └── Post-installation/
 │       ├── json
-│       └── csv/
+│       └── csv
 └── MultiFamily/
     ├── Initial Enrollment/
     │   ├── json
-    │   └── csv/
+    │   └── csv
+    ├── Final Enrollment/
+    │   ├── json
+    │   └── csv
     ├── Installation/
     │   ├── json
-    │   └── csv/
-    ├── Post-installation/
-    │   ├── json
-    │   └── csv/
-    └── Final Enrollment/
+    │   └── csv
+    └── Post-installation/
         ├── json
-        └── csv/
+        └── csv
 ```
 
 Each stage directory contains a sample `.json` payload and a `csv` Template. 
