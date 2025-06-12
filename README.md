@@ -5,11 +5,13 @@ This repository enables API-based project data transmission for the **Equitable 
 ## 📁 Contents
 
 - JSON & CSV templates for Single Family and Multifamily projects
-- Postman Collection and Environmental variable for sending Create and Update API calls
+- Postman collection and environment JSON files for authentication and requests
 - Instructions for authentication, setup, and usage
 
 ## Directory Structure
-
+postman/
+├── collections/
+└── environments/
 project-data-transmission-templates/
 ├── SingleFamily/
 │   ├── Initial Enrollment/
@@ -37,6 +39,23 @@ project-data-transmission-templates/
     └── Final Enrollment/
         ├── data.json
         └── csv/
+
+Each stage directory contains a sample `data.json` payload and a `csv` folder. Replace the placeholder README within each `csv` directory with your own templates when you are ready to perform bulk uploads.
+The [`postman`](postman/) folder stores the Postman collection and environment files. You can download them from [`postman/collections`](postman/collections/) and [`postman/environments`](postman/environments/).
+
+## 🛠 Setup Instructions
+
+### 1. Install Postman
+Download from [https://www.postman.com/downloads](https://www.postman.com/downloads)
+
+### 2. Import Postman Collection
+- Download the collection from [`postman/collections`](postman/collections/)
+- Open Postman → Click **Import**
+- Upload `EBD.postman_collection.json`
+
+### 3. Import Environment
+- Download the environment file from [`postman/environments`](postman/environments/)
+- Import `EBD Portal.postman_environment.json`
 
 Each stage directory contains a sample `data.json` payload and a sample `csv` Template.
 
@@ -98,6 +117,9 @@ Updates can also be submitted via **JSON or CSV**.
 - Header: `Content-Type: text/csv`
 - Body → `binary` → upload `update_template.csv`
 - Click **Send**
+
+📨 A confirmation email will be sent with processing results.
+
 
 ## 📌 Best Practices
 
