@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "a2af604a-d264-4726-b921-b5b2c755cc66",
+		"name": "EBD",
+		"description": "# 📘 EBD Project API - Postman Collection Guide\n\nThis collection allows you to **create and update project records** for the EBD (Equitable Building Decarbonization) program in Salesforce — using **Postman**, without needing direct Salesforce access.\n\n---\n\n## 🔐 Step 1: Authenticate with Salesforce\n\n1. Make sure the **EBD environment** is selected in the top-right corner of Postman.\n    \n2. Go to the collection’s **Authorization tab**.\n    \n3. Click **Get New Access Token**.\n    \n4. A browser window will open — log in with your Salesforce credentials.\n    \n5. Once authenticated, click **Use Token** in Postman.\n    \n\nYou're now authenticated and can send requests.\n\n---\n\n## 🆕 Step 2: Create New Project/Projects Record (JSON/CSV)\n\n## _Through JSON_\n\n1. Endpoint: `POST` {{domain_url}}/services/apexrest/EBD/EBDAPIStage1Creation/\n    \n2. Click the **Body** tab → choose `raw` → set to `JSON`.\n    \n3. Use the JSON structure to add your data:\n    \n4. Click **Send**  \n    ✅ A new project will be created.\n    \n\n## _Through CSV_\n\n1. **Endpoint:** `POST` {{domain_url}}/services/apexrest/EBD/EBDAPIStage1Creation/  \n    **Headers:** `Content-Type: text/csv`\n    \n2. In **Body**, choose `binary`.\n    \n3. Upload a `.csv` file.:\n    \n4. Click **Send**  \n    ✅ Multiple projects will be created.\n    \n\n## ✏️ Step 3: Update Existing Project/Projects Record (JSON/CSV)\n\n## _Through JSON_\n\n1. Endpoint: `PATCH` {{domain_url}}/services/apexrest/EBD/EBDAPIUpdateProjects/\n    \n2. In **Body**, choose `raw` → set to `JSON`.\n    \n3. Use the JSON structure to add your data:\n    \n4. Click **Send**  \n    ✅ The project will be updated.\n    \n\n## _Through CSV_\n\n1. Endpoint: `PATCH` {{domain_url}}/services/apexrest/EBD/EBDAPIUpdateProjects/\n    \n2. **Headers:** `Content-Type: text/csv`\n    \n3. In **Body**, choose `binary`.\n    \n4. Upload a `.csv` file.:\n    \n5. Click **Send**  \n    ✅ The project(S) will be updated.\n    \n\n# _**Please use this GITHUB LINK for JSON and CSV templates.**_\n\n[https://github.com/subhammoha/EBD_DATA_Transmission](https://github.com/subhammoha/EBD_DATA_Transmission)\n\n⚙️ Notes\n\n- **Authorization header** will auto-fill:  \n    `Bearer {{access_token}}`\n    \n- If the token expires, go back to the **Authorization tab** and click **Get New Access Token**\n    \n- Replace any field names (like `Status__c`) if your Salesforce org uses different names\n    \n\n---\n\n---\n\n> 🧠 If you're not sure how to proceed or get an error, please contact the EBD Salesforce Support Team.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27253963",
+		"_collection_link": "https://sabinkars.postman.co/workspace/CEC~8209288b-1bfa-4e4e-b82d-ceffd5c03811/collection/27253963-a2af604a-d264-4726-b921-b5b2c755cc66?action=share&source=collection_link&creator=27253963"
+	},
+	"item": [
+		{
+			"name": "Create A Single Project(JSON)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 00Dcq000000wJYX!AQEAQHjHLryjwAfgMBh6TnLC0bXHFumM6q4gT9RTRzdcNmANnokbBVKz6EryYIwrceWt9LFD.w5T.ENDibSitBVhjl4OSalw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"ProjectName\": \"C-AA-258430\",\r\n    \"Stage\": \"Initial Enrollment\",\r\n    \"InitialEnrollmentStatus\": \"Complete\",\r\n    \"ProjectType\": \"Single Family\",\r\n    \"LeadSource\": \"CBO Direct Outreach\",\r\n    \"LeadSourceOther\": \"Hallo\",\r\n    \"CboName\": \"Test CBO\",\r\n    \"ReasonForOptOut\": \"\",\r\n    \"ReasonForIneligibility\": \"\",\r\n    \"BuildingType\": \"\",\r\n    \"SelectApplicableOtherResidentialAccomodationTypes\": \"Farmworker housing\",\r\n    \"CaliforniaRegion\": \"Southern\",\r\n    \"StreetNumber\": \"24th Street\",\r\n    \"StreetName\": \"\",\r\n    \"UnitNameOrNumber\": 25,\r\n    \"City\": \"Diago\",\r\n    \"ZipCode\": 56982,\r\n    \"CountyNorthern\": \"\",\r\n    \"CountyCentral\": \"\",\r\n    \"CountySouthern\": \"Riverside\",\r\n    \"CensusTract\": \"\",\r\n    \"AssemblyDistrict\": \"\",\r\n    \"SenateDistrict\": \"\",\r\n    \"CaliforniaClimateZone\": \"\",\r\n    \"DisadvantagedCommunity\": false,\r\n    \"Within12MileOfADisadvantagedCommunity\": true,\r\n    \"LowIncomeCommunity\": \"FALSE\",\r\n    \"FirstNameOwner\": \"Daniel\",\r\n    \"LastNameOwner\": \"Rotso\",\r\n    \"CompanyOwner\": \"gggg\",\r\n    \"ProjectStatusDate\": \"2025-04-15\",\r\n    \"NumberOfOccupantsInHousehold\": 40,\r\n    \"FirstNameOccupant\": \"\",\r\n    \"LastNameOccupant\": \"\",\r\n    \"OwnerOccupied\": false,\r\n    \"PhoneOccupant\": \"898-256-2651\",\r\n    \"EmailOccupant\": \"Test@gmail.com\",\r\n    \"CurrentMonthlyRent\": 250000,\r\n    \"ElectricBillPaidBy\": \"Occupant\",\r\n    \"GasOrPropaneBillPaidBy\": \"\",\r\n    \"IncomeVerificationMethodology\": \"Other\",\r\n    \"IncomeVerificationMethodologyOther\": \"Test Other\",\r\n    \"HouseholdIncomeCategory\": \"Extremely low-income (below 30% AMI)\",\r\n    \"CategoricalEligibility\": \"\",\r\n    \"CategoricalEligibilityOther\": \"\",\r\n    \"ElectricUtilityNorthern\": \"Sacramento Municipal Utility District (SMUD)\",\r\n    \"GasUtilityNorthern\": \"City of Palo Alto Utilities\",\r\n    \"ElectricUtilityCentral\": \"\",\r\n    \"GasUtilityCentral\": \"\",\r\n    \"ElectricUtilitySouthern\": \"Burbank Water and Power\",\r\n    \"GasUtilitySouthern\": \"Southwest Gas Corporation\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{login_domain}}}/services/apexrest/EBD/EBDAPIStage1Creation/",
+					"host": [
+						"{{login_domain}}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"EBD",
+						"EBDAPIStage1Creation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Multiple Project(JSON)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 00Dcq000000wJYX!AQEAQHjHLryjwAfgMBh6TnLC0bXHFumM6q4gT9RTRzdcNmANnokbBVKz6EryYIwrceWt9LFD.w5T.ENDibSitBVhjl4OSalw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"ProjectName\": \"N-AA-255125\",\r\n    \"Stage\": \"Initial Enrollment\",\r\n    \"InitialEnrollmentStatus\": \"Complete\",\r\n    \"ProjectType\": \"Single Family\",\r\n    \"LeadSource\": \"Other\",\r\n    \"LeadSourceOther\": \"Test Other LS\",\r\n    \"CboName\": \"Test CBO\",\r\n    \"ReasonForOptOut\": \"\",\r\n    \"ReasonForIneligibility\": \"\",\r\n    \"BuildingType\": \"Duplex (2 Units)\",\r\n    \"SelectApplicableOtherResidentialAccomodationTypes\": \"Farmworker housing\",\r\n    \"CaliforniaRegion\": \"Northern\",\r\n    \"StreetNumber\": \"24th Street\",\r\n    \"StreetName\": \"Santa Carla\",\r\n    \"UnitNameOrNumber\": 25,\r\n    \"City\": \"Diago\",\r\n    \"ZipCode\": 56982,\r\n    \"CountyNorthern\": \"Marin\",\r\n    \"CountyCentral\": \"\",\r\n    \"CountySouthern\": \"\",\r\n    \"CensusTract\": 10000000000,\r\n    \"AssemblyDistrict\": 40,\r\n    \"SenateDistrict\": 30,\r\n    \"CaliforniaClimateZone\": 15,\r\n    \"DisadvantagedCommunity\": \"TRUE\",\r\n    \"Within12MileOfADisadvantagedCommunity\": \"FALSE\",\r\n    \"LowIncomeCommunity\": \"TRUE\",\r\n    \"FirstNameOwner\": \"Daniel\",\r\n    \"LastNameOwner\": \"Rotso\",\r\n    \"CompanyOwner\": \"gggg\",\r\n    \"ProjectStatusDate\": \"2025-04-15\",\r\n    \"NumberOfOccupantsInHousehold\": 40,\r\n    \"FirstNameOccupant\": \"Rega\",\r\n    \"LastNameOccupant\": \"John\",\r\n    \"OwnerOccupied\": \"TRUE\",\r\n    \"PhoneOccupant\": \"898-256-2651\",\r\n    \"EmailOccupant\": \"Test@gmail.com\",\r\n    \"CurrentMonthlyRent\": 250000,\r\n    \"ElectricBillPaidBy\": \"Occupant\",\r\n    \"GasBillPaidBy\": \"Occupant\",\r\n    \"IncomeVerificationMethodology\": \"Pay stub\",\r\n    \"IncomeVerificationMethodologyOther\": \"\",\r\n    \"HouseholdIncomeCategory\": \"Extremely low-income (below 30% AMI)\",\r\n    \"CategoricalEligibility\": \"\",\r\n    \"CategoricalEligibilityOther\": \"\",\r\n    \"ElectricUtilityNorthern\": \"Sacramento Municipal Utility District (SMUD)\",\r\n    \"GasUtilityNorthern\": \"City of Palo Alto Utilities\",\r\n    \"ElectricUtilityCentral\": \"\",\r\n    \"GasUtilityCentral\": \"\",\r\n    \"ElectricUtilitySouthern\": \"\",\r\n    \"GasUtilitySouthern\": \"\"\r\n  },\r\n  {\r\n    \"ProjectName\": \"N-AA-255126\",\r\n    \"Stage\": \"Initial Enrollment\",\r\n    \"InitialEnrollmentStatus\": \"Complete\",\r\n    \"ProjectType\": \"Mobile Home\",\r\n    \"LeadSource\": \"Referral\",\r\n    \"LeadSourceOther\": \"\",\r\n    \"CboName\": \"Bright Future Org\",\r\n    \"ReasonForOptOut\": \"\",\r\n    \"ReasonForIneligibility\": \"\",\r\n    \"BuildingType\": \"Manufactured Home\",\r\n    \"SelectApplicableOtherResidentialAccomodationTypes\": \"Senior housing\",\r\n    \"CaliforniaRegion\": \"Central\",\r\n    \"StreetNumber\": \"12th Ave\",\r\n    \"StreetName\": \"Oakland\",\r\n    \"UnitNameOrNumber\": \"B1\",\r\n    \"City\": \"Fresno\",\r\n    \"ZipCode\": 93706,\r\n    \"CountyNorthern\": \"\",\r\n    \"CountyCentral\": \"Fresno\",\r\n    \"CountySouthern\": \"\",\r\n    \"CensusTract\": 9876543210,\r\n    \"AssemblyDistrict\": 31,\r\n    \"SenateDistrict\": 16,\r\n    \"CaliforniaClimateZone\": 13,\r\n    \"DisadvantagedCommunity\": \"TRUE\",\r\n    \"Within12MileOfADisadvantagedCommunity\": \"TRUE\",\r\n    \"LowIncomeCommunity\": \"FALSE\",\r\n    \"FirstNameOwner\": \"Marsha\",\r\n    \"LastNameOwner\": \"Lee\",\r\n    \"CompanyOwner\": \"\",\r\n    \"ProjectStatusDate\": \"2025-04-15\",\r\n    \"NumberOfOccupantsInHousehold\": 3,\r\n    \"FirstNameOccupant\": \"Leo\",\r\n    \"LastNameOccupant\": \"Nash\",\r\n    \"OwnerOccupied\": \"FALSE\",\r\n    \"PhoneOccupant\": \"707-123-9876\",\r\n    \"EmailOccupant\": \"leo@example.com\",\r\n    \"CurrentMonthlyRent\": 900,\r\n    \"ElectricBillPaidBy\": \"Owner\",\r\n    \"GasBillPaidBy\": \"Owner\",\r\n    \"IncomeVerificationMethodology\": \"Self-declaration\",\r\n    \"IncomeVerificationMethodologyOther\": \"\",\r\n    \"HouseholdIncomeCategory\": \"Low-income (50–80% AMI)\",\r\n    \"CategoricalEligibility\": \"Disabled resident\",\r\n    \"CategoricalEligibilityOther\": \"\",\r\n    \"ElectricUtilityNorthern\": \"\",\r\n    \"GasUtilityNorthern\": \"\",\r\n    \"ElectricUtilityCentral\": \"Pacific Gas & Electric (PG&E)\",\r\n    \"GasUtilityCentral\": \"Pacific Gas & Electric (PG&E)\",\r\n    \"ElectricUtilitySouthern\": \"\",\r\n    \"GasUtilitySouthern\": \"\"\r\n  },\r\n  {\r\n    \"ProjectName\": \"N-AA-255127\",\r\n    \"Stage\": \"Initial Enrollment\",\r\n    \"InitialEnrollmentStatus\": \"Complete\",\r\n    \"ProjectType\": \"Multifamily\",\r\n    \"LeadSource\": \"Outreach Event\",\r\n    \"LeadSourceOther\": \"\",\r\n    \"CboName\": \"Housing Help\",\r\n    \"ReasonForOptOut\": \"\",\r\n    \"ReasonForIneligibility\": \"\",\r\n    \"BuildingType\": \"Triplex (3 Units)\",\r\n    \"SelectApplicableOtherResidentialAccomodationTypes\": \"None\",\r\n    \"CaliforniaRegion\": \"Southern\",\r\n    \"StreetNumber\": \"345 Elm St\",\r\n    \"StreetName\": \"Venice\",\r\n    \"UnitNameOrNumber\": \"A\",\r\n    \"City\": \"Los Angeles\",\r\n    \"ZipCode\": 90291,\r\n    \"CountyNorthern\": \"\",\r\n    \"CountyCentral\": \"\",\r\n    \"CountySouthern\": \"Los Angeles\",\r\n    \"CensusTract\": 4567890123,\r\n    \"AssemblyDistrict\": 62,\r\n    \"SenateDistrict\": 26,\r\n    \"CaliforniaClimateZone\": 6,\r\n    \"DisadvantagedCommunity\": \"FALSE\",\r\n    \"Within12MileOfADisadvantagedCommunity\": \"TRUE\",\r\n    \"LowIncomeCommunity\": \"TRUE\",\r\n    \"FirstNameOwner\": \"Carlos\",\r\n    \"LastNameOwner\": \"Mendez\",\r\n    \"CompanyOwner\": \"\",\r\n    \"ProjectStatusDate\": \"2025-04-15\",\r\n    \"NumberOfOccupantsInHousehold\": 6,\r\n    \"FirstNameOccupant\": \"Rita\",\r\n    \"LastNameOccupant\": \"Gomez\",\r\n    \"OwnerOccupied\": \"TRUE\",\r\n    \"PhoneOccupant\": \"310-456-7890\",\r\n    \"EmailOccupant\": \"rita.gomez@mail.com\",\r\n    \"CurrentMonthlyRent\": 1500,\r\n    \"ElectricBillPaidBy\": \"Occupant\",\r\n    \"GasBillPaidBy\": \"Owner\",\r\n    \"IncomeVerificationMethodology\": \"Tax return\",\r\n    \"IncomeVerificationMethodologyOther\": \"\",\r\n    \"HouseholdIncomeCategory\": \"Very low-income (30–50% AMI)\",\r\n    \"CategoricalEligibility\": \"\",\r\n    \"CategoricalEligibilityOther\": \"\",\r\n    \"ElectricUtilityNorthern\": \"\",\r\n    \"GasUtilityNorthern\": \"\",\r\n    \"ElectricUtilityCentral\": \"\",\r\n    \"GasUtilityCentral\": \"\",\r\n    \"ElectricUtilitySouthern\": \"Southern California Edison\",\r\n    \"GasUtilitySouthern\": \"Southern California Gas Company\"\r\n  },\r\n  {\r\n    \"ProjectName\": \"N-AA-255128\",\r\n    \"Stage\": \"Initial Enrollment\",\r\n    \"InitialEnrollmentStatus\": \"Complete\",\r\n    \"ProjectType\": \"Single Family\",\r\n    \"LeadSource\": \"Flyer\",\r\n    \"LeadSourceOther\": \"\",\r\n    \"CboName\": \"Community Energy Group\",\r\n    \"ReasonForOptOut\": \"\",\r\n    \"ReasonForIneligibility\": \"\",\r\n    \"BuildingType\": \"Single Unit\",\r\n    \"SelectApplicableOtherResidentialAccomodationTypes\": \"None\",\r\n    \"CaliforniaRegion\": \"Northern\",\r\n    \"StreetNumber\": \"678\",\r\n    \"StreetName\": \"River Rd\",\r\n    \"UnitNameOrNumber\": \"\",\r\n    \"City\": \"Sacramento\",\r\n    \"ZipCode\": 95833,\r\n    \"CountyNorthern\": \"Sacramento\",\r\n    \"CountyCentral\": \"\",\r\n    \"CountySouthern\": \"\",\r\n    \"CensusTract\": 2233445566,\r\n    \"AssemblyDistrict\": 9,\r\n    \"SenateDistrict\": 6,\r\n    \"CaliforniaClimateZone\": 12,\r\n    \"DisadvantagedCommunity\": \"FALSE\",\r\n    \"Within12MileOfADisadvantagedCommunity\": \"FALSE\",\r\n    \"LowIncomeCommunity\": \"FALSE\",\r\n    \"FirstNameOwner\": \"Nancy\",\r\n    \"LastNameOwner\": \"White\",\r\n    \"CompanyOwner\": \"\",\r\n    \"ProjectStatusDate\": \"2025-04-15\",\r\n    \"NumberOfOccupantsInHousehold\": 2,\r\n    \"FirstNameOccupant\": \"Nancy\",\r\n    \"LastNameOccupant\": \"White\",\r\n    \"OwnerOccupied\": \"TRUE\",\r\n    \"PhoneOccupant\": \"916-555-7890\",\r\n    \"EmailOccupant\": \"nancy.white@example.org\",\r\n    \"CurrentMonthlyRent\": 0,\r\n    \"ElectricBillPaidBy\": \"Occupant\",\r\n    \"GasBillPaidBy\": \"Occupant\",\r\n    \"IncomeVerificationMethodology\": \"Benefits statement\",\r\n    \"IncomeVerificationMethodologyOther\": \"\",\r\n    \"HouseholdIncomeCategory\": \"Moderate-income (80–120% AMI)\",\r\n    \"CategoricalEligibility\": \"\",\r\n    \"CategoricalEligibilityOther\": \"\",\r\n    \"ElectricUtilityNorthern\": \"Sacramento Municipal Utility District (SMUD)\",\r\n    \"GasUtilityNorthern\": \"Pacific Gas & Electric (PG&E)\",\r\n    \"ElectricUtilityCentral\": \"\",\r\n    \"GasUtilityCentral\": \"\",\r\n    \"ElectricUtilitySouthern\": \"\",\r\n    \"GasUtilitySouthern\": \"\"\r\n  }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{login_domain}}/services/apexrest/EBD/EBDAPIStage1Creation/",
+					"host": [
+						"{{login_domain}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"EBD",
+						"EBDAPIStage1Creation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Multiple Projects (CSV)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `",
+							"<style type=\"text/css\">",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+							"    .tftable tr {background-color:#ffffff;}",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+							"    .tftable tr:hover {background-color:#e0ffff;}",
+							"</style>",
+							"",
+							"<table class=\"tftable\" border=\"1\">",
+							"    <tr>",
+							"        <th>Record Number</th>",
+							"        <th>Status</th>",
+							"        <th>Errors</th>",
+							"        <th>Input Data</th>",
+							"    </tr>",
+							"    ",
+							"    {{#each response.Records}}",
+							"        <tr id=row_{{@key}}>",
+							"            <td>{{RecordNumber}}</td>",
+							"            <td>{{Status}}</td>",
+							"            <td>{{Errors.[0]}}</td>",
+							"            <td>{{#each InputData}}{{@key}}: {{this}}<br>{{/each}}</td>",
+							"        </tr>",
+							"    {{/each}}",
+							"</table>",
+							"`;",
+							"",
+							"function constructVisualizerPayload() {",
+							"    return {response: pm.response.json()}",
+							"}",
+							"",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 00Dcq000000wJYX!AQEAQHjHLryjwAfgMBh6TnLC0bXHFumM6q4gT9RTRzdcNmANnokbBVKz6EryYIwrceWt9LFD.w5T.ENDibSitBVhjl4OSalw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/csv",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{login_domain}}/services/apexrest/EBD/EBDAPIStage1Creation/",
+					"host": [
+						"{{login_domain}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"EBD",
+						"EBDAPIStage1Creation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Multiple projects (JSON)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{login_domain}}/services/apexrest/EBD/EBDAPIUpdateProjects/",
+					"host": [
+						"{{login_domain}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"EBD",
+						"EBDAPIUpdateProjects",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Multiple Projects (CSV)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/csv",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{login_domain}}/services/apexrest/EBD/EBDAPIUpdateProjects/",
+					"host": [
+						"{{login_domain}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"EBD",
+						"EBDAPIUpdateProjects",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "redirect_uri",
+				"value": "https://oauth.pstmn.io/v1/callback",
+				"type": "string"
+			},
+			{
+				"key": "useBrowser",
+				"value": false,
+				"type": "boolean"
+			},
+			{
+				"key": "grant_type",
+				"value": "authorization_code",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "{{auth_url}}",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{token_url}}",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{client_secret}}",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "api",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{clientId}}",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "access_token",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "Touch@2025",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "subham.mohapatra@caenergy.ca.gov.ebd",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			},
+			{
+				"key": "refreshRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "authRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
