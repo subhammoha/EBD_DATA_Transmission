@@ -34,16 +34,15 @@
 					}
 				},
 				"url": {
-					"raw": "{{login_domain}}}/services/apexrest/EBD/EBDAPIStage1Creation/",
+					"raw": "{{login_domain}}/services/apexrest/EBD/Create",
 					"host": [
-						"{{login_domain}}}"
+						"{{login_domain}}"
 					],
 					"path": [
 						"services",
 						"apexrest",
 						"EBD",
-						"EBDAPIStage1Creation",
-						""
+						"Create"
 					]
 				}
 			},
@@ -75,7 +74,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{login_domain}}/services/apexrest/EBD/EBDAPIStage1Creation/",
+					"raw": "{{login_domain}}/services/apexrest/EBD/Create",
 					"host": [
 						"{{login_domain}}"
 					],
@@ -83,8 +82,7 @@
 						"services",
 						"apexrest",
 						"EBD",
-						"EBDAPIStage1Creation",
-						""
+						"Create"
 					]
 				}
 			},
@@ -155,7 +153,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{login_domain}}/services/apexrest/EBD/EBDAPIStage1Creation/",
+					"raw": "{{login_domain}}/services/apexrest/EBD/Create",
 					"host": [
 						"{{login_domain}}"
 					],
@@ -163,8 +161,7 @@
 						"services",
 						"apexrest",
 						"EBD",
-						"EBDAPIStage1Creation",
-						""
+						"Create"
 					]
 				}
 			},
@@ -191,7 +188,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{login_domain}}/services/apexrest/EBD/EBDAPIUpdateProjects/",
+					"raw": "{{login_domain}}/services/apexrest/EBD/Update",
 					"host": [
 						"{{login_domain}}"
 					],
@@ -199,8 +196,7 @@
 						"services",
 						"apexrest",
 						"EBD",
-						"EBDAPIUpdateProjects",
-						""
+						"Update"
 					]
 				}
 			},
@@ -218,7 +214,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{login_domain}}/services/apexrest/EBD/EBDAPIUpdateProjects/",
+					"raw": "{{login_domain}}/services/apexrest/EBD/Update",
 					"host": [
 						"{{login_domain}}"
 					],
@@ -226,8 +222,7 @@
 						"services",
 						"apexrest",
 						"EBD",
-						"EBDAPIUpdateProjects",
-						""
+						"Update"
 					]
 				}
 			},
