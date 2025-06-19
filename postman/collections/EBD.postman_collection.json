@@ -9,7 +9,7 @@
 	},
 	"item": [
 		{
-			"name": "Create A Single Project(JSON)",
+			"name": "Create A Single Project (JSON)",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -49,7 +49,7 @@
 			"response": []
 		},
 		{
-			"name": "Create Multiple Project(JSON)",
+			"name": "Create Multiple Project (JSON)",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -89,7 +89,7 @@
 			"response": []
 		},
 		{
-			"name": "Create Multiple Projects (CSV)",
+			"name": "Create Single/Multiple Projects (CSV)",
 			"event": [
 				{
 					"listen": "test",
