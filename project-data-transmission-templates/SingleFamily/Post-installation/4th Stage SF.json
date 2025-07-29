@@ -4,9 +4,9 @@
     "Stage": "",
     "PostInstallationStatus": "",
     "ParticipantEnrolledInNewUtilityRatePlan": "",
-    "CustomerEnrolledInDemandResponseLoadFlexibilityProgram": "",
-    "NameOfDemandResponseOrLoadFlexibilityProgram": "",
-    "SupplementalMeauresFundedByPartnerPrograms": "",
+    "CustomerEnrolledInDRLoadFlexProgram": "",
+    "NameOfDRLoadFlexProgram": "",
+    "SupMeauresFundedByPartnerPrograms": "",
     "SolarPvCostPartnerProgram": "",
     "PartnerProgramNameSolarPV": "",
     "BatteryStorageCostPartnerProgram": "",
@@ -24,7 +24,7 @@
     "DateSurveyReceivedFromParticipant": "",
     "ActualNormalizedGasSavingsThermsYr": "",
     "ActualNormalizedElectricitySavingsKwhYr": "",
-    "ActualNormalizedTotalEnergySavingsKwheYr": "",
+    "ActualNormalizedEnergySavingsKwheYr": "",
     "MeasuredUtilityBillImpactYr": "",
     "MeasuredChangeInCoincidentPeakLoadKw": ""
   }
