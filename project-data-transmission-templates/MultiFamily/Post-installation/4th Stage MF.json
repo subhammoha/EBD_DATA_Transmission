@@ -4,7 +4,7 @@
     "Stage": "",
     "PostInstallationStatus": "",
     "ProjectType": "",
-    "SupplementalMeasuresFundedByPartnerPrograms": "",
+    "SupMeauresFundedByPartnerPrograms": "",
     "SolarPvCostPartnerProgram": "",
     "PartnerProgramNameSolarPV": "",
     "BatteryStorageCostPartnerProgram": "",
@@ -22,7 +22,7 @@
     "DateSurveyReceivedFromParticipant": "",
     "ActualNormalizedGasSavingsThermsYr": "",
     "ActualNormalizedElectricitySavingsKwhYr": "",
-    "ActualNormalizedTotalEnergySavingsKwheYr": "",
+    "ActualNormalizedEnergySavingsKwheYr": "",
     "MeasuredUtilityBillImpactYr": ""
   }
 ]
